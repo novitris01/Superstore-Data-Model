@@ -1,0 +1,8 @@
+dim_product    (product_id)   -> fact_order (product_id). One to many.
+dim_region     (region_id)    -> fact_order (region_id). One to many.
+dim_date       (date_id)      -> fact_order (order_date_id). One to many.
+dim_date       (date_id)      -> fact_order (ship_date_id). One to many.
+dim_ship_mode  (ship_mode_id) -> fact_order (ship_mode_id). One to many.
+dim_shipping_address (shipping_address_id) --> fact_order (shipping_address_id). One to many. 
+dim_customer  (customer_id)  -> fact order (customer_id). One to many.
+dim_date      (date_id)      -> fact_return (return_date_id). One to many.
